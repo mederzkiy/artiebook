@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artiebook - Превратите детские рисунки в арт-книгу</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Не дайте детским шедеврам пылиться в коробках. Сфотографируйте рисунки на телефон — наш ИИ оформит их в премиальную книгу.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Преврати детские рисунки в арт-книгу</h1>
+            <p class="subtitle">Не дай шедеврам твоих детей пылиться в коробках или потеряться в макулатуре. Сфотографируй рисунки и поделки на телефон — наш ИИ мгновенно оформит их в премиальную цифровую арт-книгу или версию готовую для печати. Без ручного сканирования, очистки фона, ретуши от клякс и поиска шаблонов для дизайна книги.</p>
+            <a href="#upload" class="btn btn-primary btn-large cta-pulse">Создать книгу &rarr;</a>
+            <div class="trust-badges">
+                <span class="badge">✨ ИИ-обработка</span>
+                <span class="badge">📖 Типографское качество</span>
+                <span class="badge">⚡ Быстрый результат</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Banner Section -->
+    <section class="pricing-banner-wrapper">
+        <div class="container">
+            <div class="pricing-banner">
+                <div class="pricing-info">
+                    <h3>Цифровая книга (до 20 рисунков)</h3>
+                    <div class="price-container">
+                        <span class="original-price">1250 сом</span>
+                        <span class="current-price">499 сом</span>
+                        <div class="discount-badge">-40%</div>
+                    </div>
+                </div>
+                <div class="countdown-container">
+                    <p>Акция действует до:</p>
+                    <div class="countdown" id="countdown">
+                        <div class="unit">
+                            <span id="countdown-days">00</span>
+                            <span class="label">дней</span>
+                        </div>
+                        <div class="unit">
+                            <span id="countdown-hours">00</span>
+                            <span class="label">часов</span>
+                        </div>
+                        <div class="unit">
+                            <span id="countdown-mins">00</span>
+                            <span class="label">минут</span>
+                        </div>
+                        <div class="unit">
+                            <span id="countdown-secs">00</span>
+                            <span class="label">секунд</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain/Solution Section -->
+    <section class="pain-section">
+        <div class="container">
+            <h2 class="section-title">Знакомо?</h2>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">😩</div>
+                    <p>Рисунки копятся стопками на полках и в шкафах</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">📱</div>
+                    <p>Фото рисунков теряются среди тысяч других в телефоне</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">💔</div>
+                    <p>Выбросить жалко, но хранить негде</p>
+                </div>
+            </div>
+            <p class="solution-text">Artiebook — решение для заботливых родителей. Превратите горы бумаги в книгу, которой будет гордиться вся семья.</p>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="before-after" id="examples">
+        <div class="container">
+            <h2 class="section-title">Как работает магия ИИ</h2>
+            <p class="section-subtitle">Мы удаляем фон, выравниваем перспективу и улучшаем цвета, но сам рисунок передаем точно в оригинале, без дорисовок</p>
+            
+            <div class="slider-container">
+                <div class="image-container">
+                    <div class="after-image">
+                        <img src="/static/images/after.jpg" alt="ПОСЛЕ">
+                        <span class="label label-after">ПОСЛЕ</span>
+                    </div>
+                    <div class="before-image">
+                        <img src="/static/images/before.jpg" alt="ДО">
+                        <span class="label label-before">ДО</span>
+                    </div>
+                    <div class="slider-handle">
+                        <div class="slider-arrows">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это работает?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">📸</div>
+                    <h3>Сфотографируй</h3>
+                    <p>Сними рисунки на телефон как есть</p>
+                </div>
+                <div class="step-arrow"></div>
+                <div class="step-card">
+                    <div class="step-icon">☁️</div>
+                    <h3>Загрузи в Artie</h3>
+                    <p>Перетащи фото в наш конструктор</p>
+                </div>
+                <div class="step-arrow"></div>
+                <div class="step-card">
+                    <div class="step-icon">🤖</div>
+                    <h3>Мы обработаем</h3>
+                    <p>Профессиональная обработка каждого рисунка</p>
+                </div>
+                <div class="step-arrow"></div>
+                <div class="step-card">
+                    <div class="step-icon">📖</div>
+                    <h3>Получи книгу</h3>
+                    <p>Отправим цифровую книгу на почту</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Widget Section -->
+    <section class="upload-section" id="upload">
+        <div class="container">
+            <h2 class="section-title">📚 Создай свою книгу</h2>
+            <p class="section-subtitle">Загрузи до 20 фотографий и создай цифровую арт-книгу</p>
+            
+            <div class="app-container">
+                <!-- Step 1: Input -->
+                <div id="step-1-input" class="app-step active">
+                    <form id="book-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="child-name">Имя ребенка</label>
+                                <input type="text" id="child-name" placeholder="Например: Алина" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="book-title">Название книги</label>
+                                <input type="text" id="book-title" placeholder="Например: Мои первые шедевры" required>
+                            </div>
+                        </div>
+
+                        <div class="upload-area" id="drop-zone">
+                            <input type="file" id="file-input" multiple accept="image/jpeg, image/png, image/webp" style="display: none;">
+                            <div class="upload-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            </div>
+                            <h3>Перетащи фото сюда</h3>
+                            <p>или нажми для выбора файлов</p>
+                            <span class="upload-hint">Поддерживаются JPG, PNG (макс. 20 файлов)</span>
+                        </div>
+
+                        <div id="thumbnails-container" class="thumbnails-grid hidden">
+                            <!-- Thumbnails will be injected here via JS -->
+                        </div>
+                        <p id="thumbnails-hint" class="thumbnails-hint hidden" style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;">
+                            * Перетаскивайте фото, чтобы изменить их порядок. Первое фото станет обложкой.
+                        </p>
+
+                        <div class="form-actions hidden" id="form-actions">
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                                Собрать книгу 🎨
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Step 2: Processing -->
+                <div id="step-2-processing" class="app-step hidden">
+                    <div class="processing-container">
+                        <div class="processing-animation">
+                            <div class="spinner"></div>
+                            <div class="magic-wand">✨</div>
+                        </div>
+                        <h3 id="processing-status">Анализируем фотографии...</h3>
+                        <p>Искусственный интеллект творит магию. Это может занять несколько минут.</p>
+                        
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <p class="progress-text" id="progress-text">0%</p>
+                        
+                        <div class="processing-steps">
+                            <div class="proc-step active" id="proc-step-1">
+                                <span class="proc-icon">⏳</span> Обрезка и удаление фона
+                            </div>
+                            <div class="proc-step" id="proc-step-2">
+                                <span class="proc-icon">⏳</span> Улучшение цветов
+                            </div>
+                            <div class="proc-step" id="proc-step-3">
+                                <span class="proc-icon">⏳</span> Верстка страниц
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Complete -->
+                <div id="step-3-complete" class="app-step hidden">
+                    <div class="success-container">
+                        <div class="checkmark-animation">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+                        <h3>🎉 Фотографии получены!</h3>
+                        <p>Бета-тест обработки рисунок требует ручной перепроверки для максимального качества.</p>
+                        <p>Готовая книга и инвойс для оплаты будут отправлены на указанный email.</p>
+                        
+                        <div class="action-buttons">
+                            <button class="btn btn-outline" onclick="location.reload()">Создать ещё одну книгу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Modal -->
+    <div class="modal-overlay" id="email-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h3>📧 Куда отправить книгу?</h3>
+            <p>Укажите email — мы отправим инвойс для оплаты и готовую цифровую книгу.</p>
+            <form id="email-form">
+                <div class="form-group">
+                    <input type="email" id="order-email" placeholder="Ваш Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="order-phone" placeholder="Телефон (WhatsApp)" required>
+                </div>
+                <div class="price-reminder">Стоимость: 499 сом (скидка 40%)</div>
+                <button type="submit" class="btn btn-primary btn-full" id="order-submit">Отправить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему Artiebook?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧹</div>
+                    <h3>Чистый рисунок</h3>
+                    <p>Уберём фон, тени и всё лишнее — останется только рисунок</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📐</div>
+                    <h3>Идеальное качество</h3>
+                    <p>300 DPI — готово для печати в типографии</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎨</div>
+                    <h3>Яркие цвета</h3>
+                    <p>Усиление контрастности и насыщенности как в оригинале</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💾</div>
+                    <h3>Вечная память</h3>
+                    <p>Цифровая книга хранится вечно — рисунки больше не потеряются</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Быстрый результат</h3>
+                    <p>Загрузи фото — получи готовую книгу</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Идеальный подарок</h3>
+                    <p>Бабушки и дедушки будут в восторге</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие форматы фото поддерживаются?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы поддерживаем стандартные форматы изображений: JPG, PNG, HEIC и WebP. Максимальный размер одного файла — 10 МБ.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько рисунков можно добавить?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В одну книгу можно добавить до 20 рисунков.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько стоит?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Цифровая книга стоит 499 сом (скидка 40% до 31 августа 2026). Печатную версию можете заказать в любой типографии, отправив наш готовый файл.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как я получу книгу?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Готовая книга и инвойс для оплаты будут отправлены на указанный email.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли распечатать?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да! Файл подготовлен в типографском качестве 300 DPI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <h2>Остались вопросы?</h2>
+                <p>Напишите нам, и мы с радостью поможем</p>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea placeholder="Ваше сообщение" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content" style="text-align: center;">
+                <div class="footer-logo">
+                    <span class="logo-text">Artiebook</span>
+                </div>
+                <p>Сделано с ❤️ для любящих родителей</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 Artiebook. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
